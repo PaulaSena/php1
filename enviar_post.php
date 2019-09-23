@@ -18,5 +18,7 @@ curl_exec($url);
 curl_close($url);
 
 
-
   ?>
+
+$url
+  $ch=

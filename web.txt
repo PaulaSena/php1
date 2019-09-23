@@ -1,0 +1,61 @@
+﻿Criar um formulário simples em html com um único campo CPF;
+
+Fazer uma validação em javascript antes de fazer o post;
+
+
+Consumir o WS https://bi.vidaclass.com.br/utils 
+para consultar informações do CPF enviado pelo form;
+
+
+Do retorno obtido exibir na tela:
+
+
+Nome, 
+email, 
+telefone
+ 
+
+Se tem compra em saude: Sim | Não
+
+Quantas compras: (5) ex.
+
+Se tem farma: Sim | Não
+
+
+Se tem dependente: Sim | Não
+
+Qtd. de dependentes: (2) ex.
+
+
+
+
+
+Obtem o token para consumir os endpoints;
+
+
+https://bi.vidaclass.com.br/auth
+{
+	
+"company_id": 1,
+
+	"username": "webmaster@vidaclass.com.br",
+
+	"password": "Teste20170705"
+
+}
+
+
+Endpoint para consultar o CPF 
+https://bi.vidaclass.com.br/utils
+{
+
+	"action": 4,
+	
+"key": 
+{
+		"cpf": 25383193820
+	}
+}
+
+
+

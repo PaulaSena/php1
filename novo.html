@@ -1,0 +1,53 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<script type="text/javascript">
+
+		function validar(){
+			var cpf = formuser.cpf.value;
+			
+		
+	var erro = false
+
+		if (cpf == "" ){
+			alert("Preencha o campo CPF.");
+			
+			erro = true
+		}
+
+		if (cpf.length != 11) {
+			alert("CPF invalido!")
+			
+			erro = true
+
+		}
+
+		if (erro) {
+			return false
+		}else{
+			return true
+		}
+
+	
+		}
+		
+	</script>
+
+
+</head>
+<body>
+
+	<form name="formuser" method="post" action="validado.php">
+
+		<label> CPF </label><input type="text" name="cpf" maxlength="11">
+		<input type="submit" onclick="return validar ()">
+		
+	</form>
+
+</body>
+</html>
